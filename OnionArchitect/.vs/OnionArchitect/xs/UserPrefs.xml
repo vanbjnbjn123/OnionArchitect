@@ -1,0 +1,54 @@
+﻿<Properties StartupConfiguration="{F96D8975-6E35-40A9-A5B4-8D225F331645}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Onion.Respository/OnionDBContext.cs">
+    <Files>
+      <File FileName="Onion.Respository/OnionDBContext.cs" Line="22" Column="10" />
+      <File FileName="Onion.Respository/appsettings.json" />
+      <File FileName="Onion.Respository/Program.cs" Line="17" Column="1" />
+      <File FileName="Onion.Respository/Migrations/20231229034635_InitialCreated.cs" />
+      <File FileName="Onion.Domain/Entities/UserInfomation.cs" Line="8" Column="41" />
+      <File FileName="Onion.Domain/EntityConfigurations/UserConfiguration.cs" />
+      <File FileName="Onion.Domain/Entities/User.cs" Line="8" Column="32" />
+      <File FileName="Onion.Domain/EntityConfigurations/UserInfomationConfiguration.cs" />
+      <File FileName="Onion.Domain/Utils/Util.cs" />
+      <File FileName="Onion.Respository/Migrations/20231229061721_CreateUserAndUserInfomation.cs" />
+      <File FileName="Onion.Domain/Utils/PasswordHelper.cs" />
+      <File FileName="Onion.Domain/Entities/EntityBase.cs" Line="13" Column="69" />
+      <File FileName="Onion.Domain/Properties/launchSettings.json" />
+      <File FileName="Onion.Respository/Migrations/20240103034913_IntializeVer2.cs" />
+      <File FileName="Onion.Respository/Migrations/20240103033732_IntializeDatabaseStep2.cs" />
+      <File FileName="Onion.Respository/Migrations/OnionDBContextModelSnapshot.cs" />
+      <File FileName="Onion.Respository/Migrations/20240103043001_initializeV3.cs" />
+      <File FileName="Onion.Respository/Migrations/20240103033338_IntializeDatabase.cs" />
+      <File FileName="Onion.Respository/Migrations/20240103060555_initializeV4.cs" />
+      <File FileName="Onion.Respository/Respositories/RespositoryBase.cs" />
+      <File FileName="Onion.Respository/Interfaces/IRespositoryBase.cs" />
+      <File FileName="Onion.Respository/Exceptions/ExceptionHandler.cs" Line="22" Column="10" />
+      <File FileName="Onion.Domain/Entities/ApplicationUser.cs" Line="11" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OnionArchitect" expanded="True">
+            <Node name="Onion.API" expanded="True" />
+            <Node name="Onion.Domain" expanded="True">
+              <Node name="Entities" expanded="True" selected="True" />
+            </Node>
+            <Node name="Onion.Respository" expanded="True">
+              <Node name="Exceptions" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Onion.Domain FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Onion.Respository FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Onion.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.Onion.Service FirstBuild="True" />
+</Properties>

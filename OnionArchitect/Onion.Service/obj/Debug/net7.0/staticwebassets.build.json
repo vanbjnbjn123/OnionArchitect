@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Z42FvVnWSpd15uDOphYbYxFkt33yNLUJuvLVMp51tU0=",
+  "Source": "Onion.Service",
+  "BasePath": "_content/Onion.Service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
