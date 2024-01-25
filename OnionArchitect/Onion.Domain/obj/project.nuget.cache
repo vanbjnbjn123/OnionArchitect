@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "8IIqfNnkvT+sZqBdLRzrZBZgom0ArgMkINZJfT2wWS+EgCYkBfnDnLdzhI6MLazaNgW8POa5LuKs9LFfW3s8ng==",
+  "dgSpecHash": "yYGHD1+genPwvm43JmRa++KG2rhSD6sxiJjfCcxkec1YhpSgKYulIZrvsdDfOcPbyXB61OS1t06T0j3aaVsuzA==",
   "success": true,
   "projectFilePath": "/Users/tringuyen/me/OnionArchitect/Onion.Domain/Onion.Domain.csproj",
   "expectedPackageFiles": [
+    "/Users/tringuyen/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/Users/tringuyen/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "/Users/tringuyen/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/tringuyen/.nuget/packages/microsoft.entityframeworkcore/7.0.14/microsoft.entityframeworkcore.7.0.14.nupkg.sha512",
     "/Users/tringuyen/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.14/microsoft.entityframeworkcore.abstractions.7.0.14.nupkg.sha512",
     "/Users/tringuyen/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.14/microsoft.entityframeworkcore.analyzers.7.0.14.nupkg.sha512",

@@ -13,6 +13,7 @@ namespace Onion.Domain.EntityConfigurations
 
         public void Configure(EntityTypeBuilder<UserInfomation> builder)
         {
+            builder.HasKey(item => item.UserInfomationId);
         }
     }
 }

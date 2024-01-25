@@ -11,6 +11,8 @@ builder.Services.AddDbContext<OnionDBContext>(config =>
     config.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString"));
     config.EnableSensitiveDataLogging();
 });
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<OnionDBContext>();
 builder.Services.Configure<IdentityOptions>(options => {
 
     // Password settings.
@@ -26,6 +28,8 @@ builder.Services.Configure<IdentityOptions>(options => {
     options.Lockout.AllowedForNewUsers = true;
 });
 var app = builder.Build();
+
+app.UseAuthentication();
 
 app.MapGet("/", () => "Hello World!");
 

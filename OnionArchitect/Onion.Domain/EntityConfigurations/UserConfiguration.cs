@@ -24,7 +24,26 @@ namespace Onion.Domain.EntityConfigurations
             
         }
 
-        
+        // private User InitialUser()
+        // {
+        //     User item = new User
+        //     {
+        //         UserName = "admin",
+        //         PasswordHash = "123456",
+        //         Email = "admin@abccorp.xyz",
+        //         ActivatedDate = DateTime.Today,
+        //         UserInfomation = new UserInfomation
+        //         {
+        //            FirstName = "Nguyen",
+        //            LastName = "Minh Tri",
+        //            Address = "123 duong 123",
+        //            PhoneNumber = "123456789"
+        //         }
+
+        //     };
+        //     PasswordHelper.PasswordHelper.HashPassword(ref item);
+        //     return item;
+        // }
     }
 }
 

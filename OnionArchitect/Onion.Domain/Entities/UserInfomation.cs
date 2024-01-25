@@ -1,13 +1,14 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using Onion.Domain.Models;
+﻿using Onion.Domain.Models;
 
 namespace Onion.Domain.Entities
 {
-	public class UserInfomation: EntityBase
-    {
+	public class UserInfomation : EntityBase
+	{
+		public UserInfomation()
+		{
+			this.UserInfomationId = Guid.NewGuid().ToString();
+		}
+		public string UserInfomationId { set; get; }
 		public string FirstName { set; get; }
 		public string LastName { set; get; }
 		public string Address { set; get; }

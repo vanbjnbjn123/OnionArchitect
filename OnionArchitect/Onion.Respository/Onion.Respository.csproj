@@ -19,6 +19,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.14" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Onion.Domain\Onion.Domain.csproj">
@@ -29,10 +30,14 @@
     <None Remove="Respositories\" />
     <None Remove="Interfaces\" />
     <None Remove="Exceptions\" />
+    <None Remove="ImplementationRepositories\" />
+    <None Remove="ImplementationRepositories\Identities\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Respositories\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Exceptions\" />
+    <Folder Include="ImplementationRepositories\" />
+    <Folder Include="ImplementationRepositories\Identities\" />
   </ItemGroup>
 </Project>

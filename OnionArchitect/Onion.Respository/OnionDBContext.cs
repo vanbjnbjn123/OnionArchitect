@@ -4,43 +4,16 @@ using Onion.Domain;
 using Onion.Domain.Entities;
 using Onion.Domain.EntityConfigurations;
 using Onion.Domain.PasswordHelper;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace Onion.Respository
 {
-    public static class ModelBuilderExtensions
-    {
-        public static void Seed(this ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<User>().HasData(InitialUser);
-        }
-
-        private static User InitialUser()
-        {
-            User item = new User
-            {
-                Id = "dsdsadsa",
-                UserName = "admin",
-                PasswordHash = "123456",
-                Email = "admin@abccorp.xyz",
-                ActivatedDate = DateTime.Today,
-                UserInfomation = new UserInfomation
-                {
-                    Id = Guid.NewGuid().ToString(),
-                   FirstName = "Nguyen",
-                   LastName = "Minh Tri",
-                   Address = "123 duong 123",
-                   PhoneNumber = "123456789"
-                }
-
-            };
-            PasswordHelper.HashPassword(ref item);
-            return item;
-        }
-    }
-	public class OnionDBContext : DbContext
+	public class OnionDBContext : IdentityDbContext<User>
 	{
         DbSet<User> users { set; get; }
         DbSet<UserInfomation> userInfomations { set; get; }
+        DbSet<IdentityUserLogin<string>> userLogins {set; get;}
 		public OnionDBContext(DbContextOptions<OnionDBContext> options) : base(options)
 		{
             
@@ -50,9 +23,6 @@ namespace Onion.Respository
         {
             modelBuilder.ApplyConfiguration<UserInfomation>(new UserInfomationConfiguration());
             modelBuilder.ApplyConfiguration<User>(new UserConfiguration());
-
-            modelBuilder.Seed();
-
             base.OnModelCreating(modelBuilder);
         }
     }
