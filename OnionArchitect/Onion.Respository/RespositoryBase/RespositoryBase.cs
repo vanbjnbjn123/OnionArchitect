@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Onion.Domain.Models;
 using Onion.Respository.Interfaces;
 
-namespace Onion.Respository.Respositories
+namespace Onion.Respository.RespositoryBase
 {
 	public class RespositoryBase<T> : IRespositoryBase<T> where T: EntityBase
 	{

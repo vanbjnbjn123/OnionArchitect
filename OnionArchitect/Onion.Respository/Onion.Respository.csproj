@@ -27,17 +27,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Respositories\" />
-    <None Remove="Interfaces\" />
     <None Remove="Exceptions\" />
-    <None Remove="ImplementationRepositories\" />
-    <None Remove="ImplementationRepositories\Identities\" />
+    <None Remove="RespositoryBase\" />
+    <None Remove="Respositories\" />
+    <None Remove="Respositories\Identity\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Respositories\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="Exceptions\" />
-    <Folder Include="ImplementationRepositories\" />
-    <Folder Include="ImplementationRepositories\Identities\" />
+    <Folder Include="RespositoryBase\" />
+    <Folder Include="Respositories\" />
+    <Folder Include="Respositories\Identity\" />
   </ItemGroup>
 </Project>

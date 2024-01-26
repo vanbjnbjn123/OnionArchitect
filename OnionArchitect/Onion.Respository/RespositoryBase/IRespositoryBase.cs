@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Onion.Respository.Interfaces
+namespace Onion.Respository.RespositoryBase
 {
 	public interface IRespositoryBase<T> where T : class
     {

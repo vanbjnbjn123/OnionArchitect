@@ -1,12 +1,9 @@
 ﻿using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using Onion.Service;
-using Onion.Service.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options => {
     options.RequireHttpsMetadata = false;
     options.SaveToken = true;
@@ -18,6 +15,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:SecretKey"]))
     };
 });
+builder.Services.AddAutoMapper();
 var app = builder.Build();
 app.UseAuthentication();
 app.MapGet("/", () => "Hello World!");
